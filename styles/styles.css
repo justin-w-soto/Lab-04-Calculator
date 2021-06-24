@@ -1,17 +1,21 @@
 
 body {        
     font-family: 'Titillium Web', sans-serif;
-    background-color: #FFFCFA;
+    background-color: rgb(253, 245, 229);
     display: grid;
-    grid-template-rows: auto 1fr auto;
+    grid-template-rows: auto;
 }
 
 main {
     padding: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+    
 }
 
 header {
-    background-color: #A2D7D2;
+    background-color: rgb(233, 220, 176);
     height: 110px;
     padding: 0 30px;
     display: flex;
@@ -25,11 +29,62 @@ header img {
 }
 
 h1 {
-    font-size: 1.5rem;
-    font-weight: bold;
+    font-size: 3.5rem;
+    font-weight: bolder;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  
 }
 
 footer {
-    background-color: #FAF0EA;
+   
     padding: 10px;
 }
+
+button { 
+    background: rgb(233, 220, 176);
+    color: black;
+    border-radius: 4px;
+    box-shadow: 5px 3px 3px darkgrey;
+    width: 300px;
+    height: 40px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+}
+
+button:hover {
+    background: rgb(255, 196, 0);
+    color: white;
+    font-size: 1.5rem;
+}
+
+input{ 
+    font-size: 2rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background: rgb(241, 245, 226);
+    color: dimgrey;
+    width: 300px;
+    height: 50px;
+    border: solid 2px gray;
+    border-radius: 5px;
+    box-shadow: 5px 3px 3px darkgrey;
+}
+
+.symbol {
+    font-size: 2rem;
+    font-style: bold;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+#calcpic {
+    width: 500px;
+    border: solid 4px ;
+    border-radius: 10px;
+    justify-self: center;  
+    opacity: 95%;
+   
+}
+
+
+

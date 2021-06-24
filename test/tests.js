@@ -43,5 +43,12 @@ test('time to test a function', (expect) => {
     expect.equal(actual, expected);
 });
 
+//INTEGER DIVISION
+import { integer } from '../calculations.js';
+test('time to test a function', (expect) => {
+    const expected = 3;
+    const actual = integer(10, 3); 
+    expect.equal(actual, expected);
+});
 
 

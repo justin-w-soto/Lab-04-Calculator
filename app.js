@@ -88,3 +88,20 @@ moduloBtn.addEventListener('click', () => {
     console.log(answer);
     moduloAnswerSpan.textContent = answer;
 });
+
+//integer division
+import { integer } from './calculations.js';
+const integerInput1 = document.getElementById('integerdiv-num1');
+const integerInput2 = document.getElementById('integerdiv-num2');
+const integerAnswerSpan = document.getElementById('integerdiv-answer');
+const integerBtn = document.getElementById('integerdiv-btn');
+
+integerBtn.addEventListener('click', () => {
+    console.log(integerInput1.value);
+    const integer1 = Number(integerInput1.value);
+    const integer2 = Number(integerInput2.value);
+    const answer = integer(integer1, integer2);
+    console.log(answer);
+    integerAnswerSpan.textContent = answer;
+});
+//pythagorean theorem

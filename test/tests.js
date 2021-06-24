@@ -1,19 +1,47 @@
-// IMPORT MODULES under test here:
-// import { add } from '../calculator.js';
 
+
+// QUNIT TEST
 const test = QUnit.test;
 
-// name your test by what it is testing
+// ADD
+import { add } from '../calculations.js';
 test('time to test a function', (expect) => {
-    //Arrange
-    // Set up your arguments and expectations
-    const expected = true;
-    
-    //Act 
-    // Call the function you're testing and set the result to a const
-    const actual = true; // use your function here
-
-    //Expect
-    // Make assertions about what is expected versus the actual result
+    const expected = 5;
+    const actual = add(2, 3); 
     expect.equal(actual, expected);
 });
+
+// SUBTRACT
+import { subtract } from '../calculations.js';
+test('time to test a function', (expect) => {
+    const expected = 1;
+    const actual = subtract(3, 2); 
+    expect.equal(actual, expected);
+});
+
+// MULTIPLY
+import { multiply} from '../calculations.js';
+test('time to test a function', (expect) => {
+    const expected = 6;
+    const actual = multiply(3, 2); 
+    expect.equal(actual, expected);
+});
+
+// DIVIDE
+import { divide } from '../calculations.js';
+test('time to test a function', (expect) => {
+    const expected = 3;
+    const actual = divide(6, 2);
+    expect.equal(actual, expected);
+});
+
+// MODULO
+import { modulo } from '../calculations.js';
+test('time to test a function', (expect) => {
+    const expected = 1;
+    const actual = modulo(7, 2); 
+    expect.equal(actual, expected);
+});
+
+
+
